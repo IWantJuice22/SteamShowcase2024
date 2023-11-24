@@ -81,7 +81,7 @@
       }
 
       p {
-        font-size: 1.5em;
+        font-size: 1.6em;
       }
 
       .logo-container {
@@ -164,11 +164,12 @@
       }
 
       .sponsor-logo {
-        max-width: 400px;
-        max-height: 400px;
-        margin: 25px;
+        max-width: 45%;
+        max-height: 45%;
+        margin: 2.5%;
+        border-color: rgb(226, 47, 47) 6;
 
-        border-radius: 3px;
+        border-radius: 5px;
       }
 
       /* Cursor follower styles */
@@ -183,7 +184,10 @@
         transform: translate(-50%, -50%);
         pointer-events: none;
       }
-
+      .prizeList {
+        font-size: 22px;
+        color: orange;
+      }
       /* Cursor shrink effect */
       .cursor.shrink {
         transform: translate(-50%, -50%) scale(0.5);
@@ -395,13 +399,13 @@
               in each division. Here's what you can win:
             </p>
             <ul>
-              <li>
+              <li class="prizeList">
                 First Place: Exciting Prize and Certificate of Achievement
               </li>
-              <li>
+              <li class="prizeList">
                 Second Place: Amazing Prize and Certificate of Achievement
               </li>
-              <li>
+              <li class="prizeList">
                 Third Place: Fantastic Prize and Certificate of Achievement
               </li>
             </ul>
@@ -414,7 +418,7 @@
       id="sponsorCarousel"
       class="carousel slide mt-5 border pt-3 pb-5"
       data-ride="carousel"
-      data-interval="4000"
+      data-interval="7000"
     >
       <ol class="carousel-indicators">
         <li
@@ -429,66 +433,65 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <h3 class="text-center mb-4">Platinum Sponsors</h3>
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between mx-3 mx-auto">
             <img
               src="assets/Sponsor1.png"
-              class="d-block w-45 mx-auto border border-5 border-primary"
+              class="sponsor-logo"
               alt="Sponsor 1"
             />
             <img
               src="assets/Sponsor2.png"
-              class="d-block w-45 mx-auto border border-5 border-primary"
+              class="sponsor-logo"
               alt="Sponsor 2"
             />
           </div>
         </div>
         <div class="carousel-item">
           <h3 class="text-center mb-4">Gold Sponsors</h3>
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between mx-3 mx-auto">
             <img
               src="assets/Sponsor3.png"
-              class="d-block w-45 mx-auto border border-5 border-primary"
+              class="sponsor-logo"
               alt="Sponsor 3"
             />
             <img
               src="assets/Sponsor4.png"
-              class="d-block w-45 mx-auto border border-5 border-primary"
+              class="sponsor-logo"
               alt="Sponsor 4"
             />
           </div>
         </div>
         <div class="carousel-item">
           <h3 class="text-center mb-4">Silver Sponsors</h3>
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between mx-3 mx-auto">
             <img
               src="assets/Sponsor5.png"
-              class="d-block w-45 mx-auto border border-5 border-primary"
+              class="sponsor-logo"
               alt="Sponsor 5"
             />
             <img
               src="assets/Sponsor6.png"
-              class="d-block w-45 mx-auto border border-5 border-primary"
+              class="sponsor-logo"
               alt="Sponsor 6"
             />
           </div>
         </div>
         <div class="carousel-item">
           <h3 class="text-center mb-4">Bronze Sponsors</h3>
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between mx-3 mx-auto">
             <img
               src="assets/Sponsor7.png"
-              class="d-block w-45 mx-auto border border-5 border-primary"
+              class="sponsor-logo"
               alt="Sponsor 7"
             />
             <img
               src="assets/Sponsor8.png"
-              class="d-block w-45 mx-auto border border-5 border-primary"
+              class="sponsor-logo"
               alt="Sponsor 8"
             />
           </div>
         </div>
       </div>
-      
     </div>
 
     <div class="cursor"></div>
