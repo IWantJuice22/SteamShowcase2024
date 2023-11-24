@@ -57,7 +57,9 @@
         text-align: center;
         margin-bottom: 20px;
       }
-
+      ul {
+        list-style-type: none;
+      }
       h1 {
         font-size: 4em;
         margin-bottom: 10px;
@@ -187,6 +189,7 @@
       .prizeList {
         font-size: 22px;
         color: orange;
+        text-align: center;
       }
       /* Cursor shrink effect */
       .cursor.shrink {
@@ -200,7 +203,8 @@
 
       .faq-question {
         color: #ffa500;
-        font-size: 1.2em;
+        font-size: 1.4em;
+        font-weight: bold;
       }
 
       .faq-answer {
@@ -211,7 +215,9 @@
       .rubric-card {
         margin-top: 30px;
       }
-
+      .upmostBox {
+        background-image: url("assets/school.png");
+      }
       .rubric-title {
         color: #87ceeb;
         font-size: 2.5em;
@@ -237,7 +243,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="box">
+      <div class="box upmostBox">
         <div class="logo-container">
           <img
             src="https://d128steam2023.web.app/static/media/logo.a116d1b5.png"
@@ -251,35 +257,6 @@
           <h3>2024 Showcase</h3>
         </div>
         <button id="rsvpBtn" class="rsvp-btn btn">Sign-Up Now!</button>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Event Rules</h5>
-              <ul>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Consectetur adipiscing elit</li>
-                <li>Ut tristique justo nec lectus varius</li>
-                <li>Eleifend lectus ultricies</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Participant Guidelines</h5>
-              <ul>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Consectetur adipiscing elit</li>
-                <li>Ut tristique justo nec lectus varius</li>
-                <li>Eleifend lectus ultricies</li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
 
       <!-- Contact Section -->
@@ -297,7 +274,41 @@
         <div class="col-md-8">
           <div class="card rubric-card">
             <div class="card-body">
-              <h5 class="rubric-title">Rubric</h5>
+              <table class="table table-hover table-dark">
+                <thead>
+                  <tr class="table-dark text-dark">
+                    <th scope="col">Points</th>
+                    <th scope="col">Criteria</th>
+                  </tr>
+                </thead>
+                <tbody class="text-primary">
+                  <tr>
+                    <th class="table-dark" scope="row">30 pts</th>
+                    <td>
+                      Problem Identification: How pertinent is your problem?
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="table-dark" scope="row">30 pts</th>
+                    <td>Solution: How feasible and logical is your project?</td>
+                  </tr>
+                  <tr>
+                    <th class="table-dark" scope="row">20 pts</th>
+                    <td>
+                      Creativity: How innovative and DARING is your project?
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="table-dark" scope="row">20 pts</th>
+                    <td>Theme: How well does your project fit the theme?</td>
+                  </tr>
+                  <tr>
+                    <th class="table-dark" scope="row">10 pts</th>
+                    <td>Presentation: How professional and engaging is it?</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- <h5 class="rubric-title">Rubric</h5>
               <p class="rubric-criteria">
                 30pts. Problem Identification: How pertinent is your problem?
               </p>
@@ -312,7 +323,7 @@
               </p>
               <p class="rubric-criteria">
                 10pts. Presentation: How professional and engaging is it?
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -325,37 +336,40 @@
             <div class="card-body">
               <h5 class="card-title">FAQ</h5>
               <p class="faq-question">
-                Q: What kinds of problems should I tackle? I'm lost!
+                What kinds of problems should I tackle? I'm lost!
               </p>
               <p class="faq-answer">
-                A: Try the UN Development Goals website for ideas. Think big,
-                and think impactful.
+                Try the
+                <a href="https://sdgs.un.org/goals"
+                  >UN Development Goals website</a
+                >
+                for ideas. Think big, and think impactful.
               </p>
 
               <p class="faq-question">
-                Q: What is the overall division? Can I win it?
+                What is the overall division? Can I win it?
               </p>
               <p class="faq-answer">
-                A: If you sign up for 3 or more divisions, you're automatically
+                If you sign up for 3 or more divisions, you're automatically
                 entered. Your average score across your divisions will be your
                 overall score. (And no, it's not edible.)
               </p>
 
               <p class="faq-question">
-                Q: I created a project this semester for class or a club or for
+                I created a project this semester for class or a club or for
                 fun, can I use that project?
               </p>
               <p class="faq-answer">
-                A: Yes, absolutely!!! That's the idea, to show off cool things
+                Yes, absolutely!!! That's the idea, to show off cool things
                 you've made!
               </p>
 
               <p class="faq-question">
-                Q: How do I enroll in the overall division (which has the
-                biggest prizes)?
+                How do I enroll in the overall division (which has the biggest
+                prizes)?
               </p>
               <p class="faq-answer">
-                A: If you apply to the 3 or more divisions (Science, Tech,
+                If you apply to the 3 or more divisions (Science, Tech,
                 Engineer, etc…), you automatically get enrolled in the overall
                 division. Your average score for each division you enter is your
                 overall score. If you do not win in the overall division, you
@@ -364,25 +378,25 @@
 
               <p class="faq-question">Q: How will prizes work?</p>
               <p class="faq-answer">
-                A: Each entry will receive prizes based on its performance. If
+                Each entry will receive prizes based on its performance. If
                 you're entering as a group, it's up to your team to divvy up
                 prizes.
               </p>
 
               <p class="faq-question">
-                Q: Can I win more than one division/prize?
+                Can I win more than one division/prize?
               </p>
               <p class="faq-answer">
-                A: Unfortunately, no. You may only win one of the individual
+                Unfortunately, no. You may only win one of the individual
                 divisions or win the overall (which is what you want).
               </p>
 
               <p class="faq-question">
-                Q: I am a part of a team, but there is only one prize (or fewer
+                I am a part of a team, but there is only one prize (or fewer
                 prizes than team members). Can I have more?
               </p>
               <p class="faq-answer">
-                A: No. Your team is responsible for the dividing of the prizes.
+                No. Your team is responsible for the dividing of the prizes.
               </p>
             </div>
           </div>
