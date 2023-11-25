@@ -152,6 +152,12 @@
         color: #ffa500;
         cursor: none;
       }
+      .ind:active{
+        cursor: none;
+      }
+      .ind:hover{
+        cursor: none;
+      }
 
       .sponsors {
         width: 100%;
@@ -432,17 +438,17 @@
       id="sponsorCarousel"
       class="carousel slide mt-5 border pt-3 pb-5"
       data-ride="carousel"
-      data-interval="7000"
+      data-interval="4250"
     >
-      <ol class="carousel-indicators">
+      <ol class="carousel-indicators ind">
         <li
           data-target="#sponsorCarousel"
           data-slide-to="0"
-          class="active"
+          class="active ind"
         ></li>
-        <li data-target="#sponsorCarousel" data-slide-to="1"></li>
-        <li data-target="#sponsorCarousel" data-slide-to="2"></li>
-        <li data-target="#sponsorCarousel" data-slide-to="3"></li>
+        <li class="ind" data-target="#sponsorCarousel" data-slide-to="1"></li>
+        <li class="ind" data-target="#sponsorCarousel" data-slide-to="2"></li>
+        <li class="ind" data-target="#sponsorCarousel" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
